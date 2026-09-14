@@ -12,6 +12,14 @@ cask "kafkamitter" do
 
   app "Kafkamitter.app"
 
+  # The app carries an ad-hoc signature and is not notarized, so Gatekeeper
+  # blocks it while the download flag is present. Homebrew 6 removed the
+  # `--no-quarantine` option, so the cask clears the flag here.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Kafkamitter.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/kafkamitter",
     "~/Library/Saved Application State/dev.fithrantyo.kafkamitter.savedState",

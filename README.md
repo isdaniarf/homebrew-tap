@@ -8,11 +8,10 @@ Kafkamitter is a native Kafka client for macOS. It browses topics, consumes and 
 
 ```sh
 brew tap isdaniarf/tap
-brew install --cask --no-quarantine kafkamitter
+brew install --cask kafkamitter
 ```
 
-The `--no-quarantine` flag is necessary. The app carries an ad-hoc signature and is not notarized, so macOS blocks it without that flag.
-
+The cask clears the macOS quarantine flag after it installs the app. Without that step Gatekeeper would block the app, because it carries an ad-hoc signature and is not notarized.
 To update:
 
 ```sh
