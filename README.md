@@ -4,7 +4,7 @@ A Homebrew tap for my macOS applications.
 
 ## Kafkamitter
 
-Kafkamitter is a native Kafka client for macOS. It browses topics, consumes and produces messages, and reads consumer group offsets.
+Kafkamitter is a native Kafka client for macOS. It browses topics, consumes and produces messages, and reads consumer group offsets. The source lives at https://github.com/isdaniarf/kafkamitter.
 
 ```sh
 brew tap isdaniarf/tap

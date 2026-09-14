@@ -1,11 +1,11 @@
 cask "kafkamitter" do
-  version "0.1.1"
-  sha256 "1820de174eeaaf4a1c901bdfc6ee36da2a4dc53a4cc1173e94923c66ff430067"
+  version "0.2.0"
+  sha256 "d51a0c5379245d771d260314d4792ef37aebc2520404cf6ec4044a3e7ea4543e"
 
-  url "https://github.com/isdaniarf/homebrew-tap/releases/download/v#{version}/Kafkamitter-#{version}-arm64.zip"
+  url "https://github.com/isdaniarf/kafkamitter/releases/download/v#{version}/Kafkamitter-#{version}-arm64.zip"
   name "Kafkamitter"
   desc "Native Kafka GUI client for macOS"
-  homepage "https://github.com/isdaniarf/homebrew-tap"
+  homepage "https://github.com/isdaniarf/kafkamitter"
 
   depends_on arch: :arm64
   depends_on macos: :ventura
