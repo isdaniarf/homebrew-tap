@@ -1,6 +1,6 @@
 cask "kafkamitter" do
-  version "0.1.0"
-  sha256 "8843d7b8a09709bf21bf8798672ec91cb825b45f4bbef6afd76e81bcff626b9e"
+  version "0.1.1"
+  sha256 "1820de174eeaaf4a1c901bdfc6ee36da2a4dc53a4cc1173e94923c66ff430067"
 
   url "https://github.com/isdaniarf/homebrew-tap/releases/download/v#{version}/Kafkamitter-#{version}-arm64.zip"
   name "Kafkamitter"
